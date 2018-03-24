@@ -1,0 +1,41 @@
+¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
+So currently I'm downloading Gradle. I still don't know what the poop we're supposed to do really.  It's also taking a while. I'm wondering if we were supposed to do that beforehand? IDK. \-
+
+
+¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
+
+PointBreakdown:
+- [ ] (2pt) Create a dockerfile for each projects in `settings.gradle`
+- [ ] (1pt) Create a gradle task to build all docker, the task could look like `./gradlew clean build buildDocker -x test`
+- [ ] (0.5pt) Create a gradle task to build single docker images when you are working in only one module
+- [ ] (2pt) Create a docker-compose version 3+ file to orchestrate de booting of all modules
+
+¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
+
+Problem A: I don't know how to make a dockerfile.
+Problem A.a: I don't know what projects we're supposed to be doing.
+Problem 2: I don't even know really what gradle is (I think something to host web stuff?)
+Problem 2.1: I don't know what a grade task is.
+Problem 2.b: I don't know anything
+Problem III: help
+¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
+
+
+I think we're supposed to make a dockerfile for each of the following:
+    rootProject.name = 'infrastructure'
+    include 'authorization'
+    include 'config-server'
+    include 'eureka-server'
+    include 'zuul-server'
+    include 'communication'
+Looking at http://www.baeldung.com/dockerizing-spring-boot-application,
+We see dockerfiles are just files that look like this:
+FROM alpine:edge
+MAINTAINER baeldung.com
+RUN apk add --no-cache openjdk8
+COPY files/UnlimitedJCEPolicyJDK8/* \
+  /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/
+
+¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
+IDK.jpg
+¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
