@@ -39,3 +39,31 @@ COPY files/UnlimitedJCEPolicyJDK8/* \
 ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
 IDK.jpg
 ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯ ¯\_(ツ)_/¯
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hey Xaioya it's brandon now!
+
+I followed some of Will's "adivice" ^ up there (mainly the URL that he linked)
+
+and I put dockerfiles into a couple of the projects that at least LOOK like they're supposed to look (maybe?)
+
+I don't think they actually work, but maybe we can get some partial credit, who knows?
+
+Good luck, these are all terrible :\
+
+
+
+
+
+
